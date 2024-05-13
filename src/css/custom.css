@@ -1,0 +1,271 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #003e8a;
+  --ifm-color-primary-dark: #00387c;
+  --ifm-color-primary-darker: #003575;
+  --ifm-color-primary-darkest: #002b61;
+  --ifm-color-primary-light: #004498;
+  --ifm-color-primary-lighter: #00479f;
+  --ifm-color-primary-lightest: #0051b3;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #fcb045;
+  --ifm-color-primary-dark: #fba325;
+  --ifm-color-primary-darker: #fb9c16;
+  --ifm-color-primary-darkest: #dd8304;
+  --ifm-color-primary-light: #fdbd65;
+  --ifm-color-primary-lighter: #fdc474;
+  --ifm-color-primary-lightest: #fed8a4;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.hero__title{
+  font-size:5rem;
+  background-image: #833ab4;  /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.5;
+  
+}
+.hero__title::before {
+  content: attr(text);
+  position: absolute;
+  z-index: -1;
+  text-shadow: 5px 5px 10px black;
+}
+
+@media screen and (max-width: 996px) {
+  .hero__title {
+    font-size: 3rem; 
+  }
+  .hero__subtitle{
+    
+    font-size: 1rem;
+  }
+}
+
+
+
+.hero__subtitle{
+  color:#003e8a;
+  font-weight:bold;
+}
+
+
+[data-theme='dark'] .hero__subtitle{
+    color:#ffffff;
+  }
+
+
+
+.container_hero{
+  width: 50vw;
+  margin-left: 8vw;
+  position: relative;
+  float: left;
+}
+
+@media screen and (max-width: 400px){
+  .hero__title{
+    font-size: 2.5rem;
+  }
+  .hero__subtitle{
+    font-size: 0.8rem;
+  }
+  .container_hero{
+    width:70vw;
+    margin-left: calc(15vw - 16px)
+  }
+}
+.hero_img{
+  float: right;
+}
+
+table {
+  padding: 0;
+  word-break: initial;
+text-align: center;
+}
+table tr {
+  border: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 0;
+height: 100px;
+}
+table tr:nth-child(2n),
+thead {
+  background-color: #f8f8f8;
+}
+table th {
+  font-weight: bold;
+  border: 1px solid #dfe2e5;
+  border-bottom: 0;
+  margin: 0;
+  padding: 6px 13px;
+}
+table td {
+  border: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+  margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+  margin-bottom: 0;
+}
+
+table 
+{
+width: 100%;
+table-layout: fixed;
+vertical-align: middle;
+text-align: center;
+display: table;
+}
+th
+{
+font-weight: bold;
+}
+
+.markdown-source-view.mod-cm6 .cm-table-widget th, .markdown-source-view.mod-cm6 .cm-table-widget td 
+{
+padding: 10px;
+height: auto;
+}
+
+.markdown-rendered th {
+text-align: center;
+vertical-align: middle;
+padding: 10px;
+}
+
+.markdown-rendered td {
+vertical-align: middle;
+padding:10px;
+}
+
+/* quiet-outline */
+.quiet-outline .n-tree-node-content {
+font-weight: 500;
+}
+
+/* inline 代码块 */
+span.cm-inline-code {
+background-color: #f3f4f4 !important;
+}
+
+/* 标题 */
+.HyperMD-header {
+padding-bottom: 0.4rem !important;
+border-bottom: 1px solid #eee;
+}
+h1 {
+  font-size: 2.25em;
+  line-height: 1.2;
+
+}
+h2 {
+  font-size: 1.75em;
+  line-height: 1.225;
+
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+ font-size: 1em;
+  color: #777;
+}
+
+/* 引用 */
+.HyperMD-quote {
+color: #777;
+}
+
+/* 隐藏链接图片 */
+.external-link {
+padding-right: 0;
+background-size: 0;
+}
+
+/* 代码块缩进 */
+.HyperMD-codeblock {
+tab-size: 4;
+}
+.markdown-rendered code{
+border-radius: 5px;
+margin:0.2em 0.2em;
+padding: 0.2em 0.5em
+}
+.markdown-rendered pre {
+border-radius: 8px;
+}
+
+/* list 行首添加空白 */
+.HyperMD-list-line > .cm-formatting-list:after {
+content: '  ';
+}
+
+/* list 相关样式 */
+/* https://forum.obsidian.md/t/style-bullets-in-lists-by-level/46152 */
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after {
+/* Bullet */
+height: 5.5px;
+width: 5.5px;
+border-radius: 50%;
+background-color: var(--list-marker-color);
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after {
+/* Hollow Bullet */
+height: 4px;
+width: 4px;
+background-color: Transparent;
+border-color: var(--list-marker-color);
+border-style: solid;
+border-radius: 50%;
+border-width: 1.5px;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after {
+/* Solid Square */
+height: 5.5px;
+width: 5.5px;
+border-radius: 0%;
+background-color: var(--list-marker-color);
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after {
+/* Hollow Square */
+height: 4px;
+width: 4px;
+background-color: Transparent;
+border-color: var(--list-marker-color);
+border-style: solid;
+border-radius: 0%;
+border-width: 1.5px;
+}
