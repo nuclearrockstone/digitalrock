@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdigital_rock=self.webpackChunkdigital_rock||[]).push([[1903],{1912:l=>{l.exports=JSON.parse('{"blogBasePath":"/digitalrock/blog","blogTitle":"Blog"}')}}]);
