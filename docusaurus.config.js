@@ -10,7 +10,7 @@ import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '无知者无畏',
+  title: '数字石碑',
   tagline: '对知识常怀敬畏之心，因为这是自然在时间上的累积',
   favicon: 'img/digitalocean.ico',
 
@@ -101,7 +101,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'DigitalRock',
+        title: 'DigitalMonument数字石碑',
         logo: {
           alt: 'My Site Logo',
           src: 'img/digitalocean.svg',

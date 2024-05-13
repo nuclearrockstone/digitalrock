@@ -15,7 +15,7 @@ function HomepageHeader() {
     <div className={clsx('hero hero--primary', styles.heroBanner)} display='flex'>
       <div className="container_hero" align='left' >
         <Heading as="h1" className="hero__title">
-        {siteConfig.title}
+        无知者无畏
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>
@@ -30,7 +30,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from DigitalRock`}
+      title={`Hello from Digital Monument`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
