@@ -15,7 +15,8 @@ function HomepageHeader() {
     <div className={clsx('hero hero--primary', styles.heroBanner)} display='flex'>
       <div className="container_hero" align='left' >
         <Heading as="h1" className="hero__title">
-        无知者无畏
+        欢迎来到<br/>
+        我的石碑
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
       </div>

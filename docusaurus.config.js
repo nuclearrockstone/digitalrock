@@ -11,7 +11,7 @@ import rehypeKatex from 'rehype-katex';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '数字石碑',
-  tagline: '对知识常怀敬畏之心，因为这是自然在时间上的累积',
+  tagline: '对知识常怀敬畏之心，因为这是自然对时间的积分',
   favicon: 'img/digitalocean.ico',
 
   // Set the production url of your site here
