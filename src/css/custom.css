@@ -81,10 +81,12 @@
 
 @media screen and (max-width: 400px){
   .hero__title{
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-align: center;
   }
   .hero__subtitle{
-    font-size: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
   }
   .container_hero{
     width:70vw;
