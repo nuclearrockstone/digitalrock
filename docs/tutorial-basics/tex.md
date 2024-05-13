@@ -10,6 +10,11 @@ hide_table_of_contents: true
 
 ### 插入公式
 
+:::info[This is a INFO]
+
+:::
+
+Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
 
 基本的代数符号及字母只需正常输入并使用``$``进行标记即可
 
